@@ -13,7 +13,8 @@ export default function Home() {
     status ? setViewCompleted(true) : setViewCompleted(false)
   };
   
-  const url = 'http://localhost:8000/api/todos/'; //change url when django is deployed to heroku
+  // const url = 'http://localhost:8000/api/todos/'; //change url when django is deployed to heroku
+  const url = 'https://nextjs-backend-todo.herokuapp.com/api/todos/' // production server for backend api
   useEffect(() => fetchData(),[]);
 
   const fetchData = () => {
